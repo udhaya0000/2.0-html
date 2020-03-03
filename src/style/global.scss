@@ -1,0 +1,33 @@
+@import "config/config";
+@import "vendors/fonts";
+@import '~bootstrap/scss/root';
+
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid";
+
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/dropdown";
+
+@import "base/base";
+@import "base/grid";
+
+@import "components/icons";
+@import "components/forms";
+@import "components/buttons";
+@import "components/nav";
+@import "components/title";
+
+@import "layouts/header";
+
+@import "utils/helpers";
+
+@import "layouts/footer";
+@import "views/login";

@@ -1,0 +1,87 @@
+.timeline {
+  list-style-type: none;
+  display: flex;
+  height: 70px;
+  position: relative;
+
+  &:before {
+    content: "";
+    background: #c5cacd;
+    border-radius: $border-radius;
+    bottom: calc(50% - 0.5em);
+    font-size: 1rem;
+    height: 1em;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  .status {
+    border-radius: $border-radius;
+    bottom: calc(50% - 0.5em);
+    font-size: 1rem;
+    height: 1em;
+    position: absolute;
+    background: linear-gradient(80.73deg, #41a1cd 0%, #7d41cd 100%);
+    width: 100%;
+  }
+}
+
+.timestamp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 3rem;
+  white-space: nowrap;
+}
+
+.label {
+  display: flex;
+  position: absolute;
+  transition: all 200ms ease-in;
+  white-space: nowrap;
+
+  span {
+    padding-bottom: 12px;
+  }
+}
+
+.timeline-slide {
+  position: absolute;
+
+  &:before {
+    content: "";
+    width: 2px;
+    height: 8px;
+    background-color: #8b959c;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 0;
+    top: 1.2rem;
+    transition: all 200ms ease-in;
+  }
+
+  &:not(:first-child) {
+    .label,
+    .timestamp {
+      transform: translate(-50%);
+    }
+  }
+
+  &:first-child {
+    .label,
+    .timestamp,
+    &:before {
+      left: 5px;
+    }
+  }
+
+  &:last-child {
+    .label,
+    .timestamp,
+    &:before {
+      left: -10px;
+    }
+  }
+}

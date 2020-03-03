@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="14px" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 55.2 (78181) - https://sketchapp.com -->
+    <title>0B6E41C8-1384-40A3-8FA1-5DD67156A4DC</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="8.25686161%" y1="48.6111111%" x2="93.6952486%" y2="51.3888889%" id="linearGradient-1">
+            <stop stop-color="#4188CD" offset="0%"></stop>
+            <stop stop-color="#41A1CD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Asset-Artboard-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Menu/dashboard/hamburguer/open">
+            <rect id="Rectangle" fill="#454D52" x="0" y="0" width="16" height="2" rx="1"></rect>
+            <rect id="Rectangle-Copy" fill="url(#linearGradient-1)" x="4" y="6" width="12" height="2" rx="1"></rect>
+            <rect id="Rectangle-Copy-2" fill="#454D52" x="0" y="12" width="16" height="2" rx="1"></rect>
+        </g>
+    </g>
+</svg>

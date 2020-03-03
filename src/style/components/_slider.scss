@@ -1,0 +1,38 @@
+$themeColor: theme-color("primary");
+$labelFontSize: 12px;
+$dotShadow: 0 4px 8px 0 rgba(101, 103, 112, 0.61);
+@import "~vue-slider-component/lib/theme/default";
+
+.vue-slider-mark-step {
+  font-size: 12px;
+  background-color: #f0f1f2;
+  border: 2px solid #c5cacd;
+  height: 1em;
+  margin-left: -0.5em;
+  margin-top: -4px;
+  transform: translateX(4px);
+  width: 1em;
+
+  &-active {
+    border-color: theme-color("primary");
+  }
+}
+
+.vue-slider-mark {
+  &:last-child,
+  &:first-child {
+    .vue-slider-mark-step {
+      display: block;
+    }
+  }
+
+  &-active {
+    .vue-slider-mark-label {
+      font-weight: $font-weight-bold;
+    }
+  }
+}
+
+.slider-wrap {
+  padding: 7px 0;
+}

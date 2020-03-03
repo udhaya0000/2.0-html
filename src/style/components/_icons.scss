@@ -1,0 +1,70 @@
+.svg-icon {
+  display: inline-block;
+  height: 1em;
+  color: inherit;
+  vertical-align: middle;
+  fill: none;
+  stroke: currentColor;
+
+  &.is-valid {
+    fill: $primary;
+  }
+
+  &.is-invalid {
+    fill: $danger;
+  }
+}
+
+.svg-fill {
+  fill: currentColor;
+  stroke: none;
+}
+
+.svg-up {
+  /* default */
+  transform: rotate(0deg);
+}
+
+.svg-right {
+  transform: rotate(90deg);
+}
+
+.svg-down {
+  transform: rotate(180deg);
+}
+
+.svg-left {
+  transform: rotate(-90deg);
+}
+
+.icon,
+.input {
+  // .icon_prepend
+  &_prepend {
+    left: 0;
+    padding: 0 $input-btn-padding-x;
+  }
+
+  // .icon_append
+  &_append {
+    right: 0;
+    padding: 0 $input-btn-padding-x;
+  }
+
+  // .icon_prepend, .icon_prepend
+  &_prepend,
+  &_append {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.icon_append {
+  &.icon_btn {
+    cursor: pointer;
+  }
+}

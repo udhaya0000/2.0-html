@@ -1,0 +1,96 @@
+.control {
+  // .control__label
+  &__label {
+    @include label;
+  }
+}
+
+.custom-control {
+  min-height: 0;
+
+  // .custom-control-inline
+  &-inline {
+    vertical-align: top;
+  }
+
+  // .custom-control-wrap
+  &-wrap {
+    line-height: 1;
+  }
+
+  // .custom-control-label
+  &-label {
+    font-size: 0.875rem;
+    line-height: 1.285715;
+
+    &:before,
+    &:after {
+      top: 1px;
+    }
+
+    &:after {
+      background-size: auto;
+    }
+  }
+
+  // .custom-control-input:checked ~ .custom-control-label
+  &-input:checked ~ &-label {
+    color: $primary;
+  }
+}
+
+.form-control {
+  .has_preicon & {
+    padding-left: 3em;
+  }
+
+  .has_posticon & {
+    padding-right: 3em;
+  }
+}
+
+select.form-control {
+  background-image: url('data:image/svg+xml;utf8,<svg width="12px" height="7px" viewBox="0 0 12 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M3.12633332,8.16366057 C2.94586557,8.36798926 2.96049537,8.68421323 3.15900989,8.86996659 C3.35752441,9.05571994 3.66475024,9.04066165 3.84521799,8.83633297 L9,3 L3.84521799,-2.83633297 C3.66475024,-3.04066165 3.35752441,-3.05571994 3.15900989,-2.86996659 C2.96049537,-2.68421323 2.94586557,-2.36798926 3.12633332,-2.16366057 L7.68699577,3 L3.12633332,8.16366057 Z" id="Path-4" transform="translate(6.000000, 3.000000) rotate(90.000000) translate(-6.000000, -3.000000) "></path></svg>');
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  border-color: #6e7b83;
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
+  appearance: none;
+}
+
+.validation {
+  // .validation-msg
+  &-msg {
+    font-size: 12px;
+    font-weight: $font-weight-bold;
+    line-height: 20px;
+    margin-top: 2px;
+  }
+
+  // .validation-icon
+  &-icon {
+    font-size: 20px;
+    margin-right: 4px;
+    vertical-align: top;
+  }
+
+  // .validation-status-icon
+  &-status-icon {
+    position: absolute;
+    right: -1.5rem;
+    top: 1rem;
+  }
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label:before {
+  background-color: $primary;
+}
+
+.form-section {
+  margin-bottom: 2rem;
+  // .form-section__label
+  &__label {
+    color: #454d52;
+    font-weight: $font-weight-bold;
+  }
+}

@@ -1,0 +1,12 @@
+@import '~bootstrap/scss/tooltip';
+
+.bs-tooltip-right {
+  .tooltip-inner {
+    font-size: 10px;
+    text-align: left;
+  }
+}
+
+.tooltip {
+  opacity: 1;
+}

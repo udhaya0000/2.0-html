@@ -1,0 +1,87 @@
+.btn {
+  // .btn-primary
+  &-primary {
+    &[disabled] {
+      background: $gray-400;
+      border-color: $gray-400;
+      cursor: default;
+    }
+
+    &:not([disabled]):hover {
+      background: $primary-hover;
+      border-color: $primary-hover;
+    }
+  }
+
+  // .btn-outline-primary
+  &-outline-primary {
+    background: #f9fdff;
+
+    &:hover {
+      background: #f9fdff;
+      border-color: $primary-hover;
+      color: $primary-hover;
+    }
+  }
+
+  // .btn-outline-danger
+  &-outline-danger {
+    background: #fffaf9;
+  }
+
+  // .btn-default
+  &-default {
+    background: #fff;
+    //border: 1px solid $gray-400;
+    box-shadow: 0 8px 8px -8px rgba(140, 142, 137, 0.64);
+
+    &:hover {
+      background: #f9f9f9;
+    }
+  }
+
+  &.has-preicon {
+    padding-left: 48px;
+  }
+
+  &.has-posticon {
+    padding-right: 48px;
+  }
+
+  &-rounded {
+    border-radius: 25px;
+  }
+
+  &-transparent {
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.action-btns {
+  .btn {
+    font-size: 1rem;
+    padding: 0 6px;
+  }
+}
+
+.button-group {
+  .btn {
+    vertical-align: top;
+  }
+
+  .btn:not(:disabled):not(.disabled) {
+    font-weight: $font-weight-normal;
+
+    &:hover,
+    &.active {
+      background: theme-color("primary");
+      border-color: theme-color("primary");
+    }
+
+    &.active {
+      cursor: default;
+    }
+  }
+}

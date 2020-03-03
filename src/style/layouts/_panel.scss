@@ -1,0 +1,68 @@
+.right-panel {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1031;
+  position: fixed;
+  transition: background 0.25s;
+
+  .panel-wrap {
+    background: #f3f3f3;
+    position: absolute;
+    top: 0;
+    right: -912px;
+    height: 100vh;
+    overflow: auto;
+    width: 912px;
+    z-index: 10;
+  }
+
+  .panel-header {
+    background: #fff;
+    box-shadow: 0 8px 16px -8px rgba(140, 142, 137, 0.24);
+    position: relative;
+    z-index: 1;
+  }
+
+  .panel-body {
+    padding: 32px 60px;
+    max-height: calc(100vh - 56px);
+    overflow: auto;
+
+    &-content {
+      background: #fff;
+      border-radius: $border-radius;
+      box-shadow: 2px 4px 8px -4px #bdc1cf;
+      padding: 40px;
+    }
+  }
+
+  .panel-btn-wrap {
+    display: flex;
+    padding: 7px;
+  }
+
+  .backdrop-btn {
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .btn-section {
+    display: flex;
+
+    .btn {
+      .svg-icon {
+        font-size: 1rem;
+        margin-right: 6px;
+        vertical-align: top;
+      }
+    }
+  }
+}

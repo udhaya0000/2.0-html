@@ -1,0 +1,81 @@
+.page-title {
+  color: #2b3033;
+  font-weight: $font-weight-bold;
+  margin-bottom: 1rem;
+  position: relative;
+
+  &:before {
+    background: #b3d9eb;
+    bottom: 0;
+    content: "";
+    height: 1rem;
+    left: 0;
+    position: absolute;
+    width: 116px;
+    z-index: 0;
+  }
+
+  // .page-title__text
+  &__text {
+    position: relative;
+    z-index: 1;
+  }
+
+  &.text-center {
+    &:before {
+      transform: translate(calc(50% + 75px));
+    }
+  }
+}
+
+.section-title {
+  @extend .page-title;
+
+  &:before {
+    height: 2px;
+    width: 48px;
+  }
+}
+
+// for login
+
+.form-title-wrap {
+  .form-title {
+    @extend .page-title;
+
+    font-size: 48px;
+    font-weight: $font-weight-bold;
+    z-index: 1;
+
+    &:before {
+      width: 100%;
+      z-index: -1;
+    }
+  }
+}
+
+.form-title-secondary {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+@include media-breakpoint-down(md) {
+  .page-title {
+    font-size: 32px;
+  }
+
+  .form-title-wrap {
+    margin-bottom: 32px;
+
+    .form-title {
+      &:before {
+        bottom: 2px;
+        height: 10px;
+      }
+    }
+  }
+
+  .form-title-secondary {
+    font-size: $font-size-base;
+  }
+}

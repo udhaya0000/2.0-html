@@ -1,0 +1,42 @@
+@import "~@/style/config/config";
+@import "~bootstrap/scss/pagination";
+
+.page-link {
+  &:not(.disabled) {
+    cursor: pointer;
+
+    &.active,
+    &:hover {
+      background: $primary;
+      color: #fff !important;
+    }
+  }
+
+  &.disabled {
+    opacity: 0.5;
+
+    &:hover {
+      background: none;
+    }
+  }
+}
+
+.pagination-wrap {
+  background: #fff;
+  border-radius: $border-radius;
+  box-shadow: 0 8px 16px -8px rgba(140, 142, 137, 0.24);
+  line-height: 40px;
+  padding: 10px;
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .page-item {
+    &:first-of-type,
+    &:last-of-type {
+      a {
+        padding: 10.5px 1rem;
+      }
+    }
+  }
+}

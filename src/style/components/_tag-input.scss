@@ -1,0 +1,56 @@
+.tag-input {
+  // .tag-input-wrapper
+  &-wrapper {
+    background: #fff;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+
+    .tag {
+      background: #d9ecf5;
+      border-radius: 25px;
+      color: #2d708f;
+      display: flex;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      white-space: nowrap;
+
+      &.invalid {
+        background: #f3f3f3;
+        color: theme-color("danger");
+      }
+
+      .tag-text {
+        padding: 6px 0 6px 12px;
+
+        &.read-only {
+          padding-right: 12px;
+        }
+      }
+
+      .close-btn {
+        border-radius: 25px;
+        border: none;
+        color: inherit;
+        display: block;
+        font-size: 0.5rem;
+        line-height: 1;
+        padding: 12px;
+      }
+
+      &:hover:not(.invalid) {
+        .close-btn {
+          background: #8dc7e1;
+        }
+      }
+
+      // .tag-input
+      &-input {
+        border: none;
+        padding: 5px;
+      }
+    }
+  }
+}

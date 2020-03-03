@@ -1,0 +1,23 @@
+@include media-breakpoint-down(md) {
+  .m-fixed-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    .btn {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+
+      // .btn-back
+      &-back {
+        border-top-right-radius: 0;
+      }
+
+      // .btn-next
+      &-next {
+        border-top-left-radius: 0;
+      }
+    }
+  }
+}

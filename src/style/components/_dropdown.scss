@@ -1,0 +1,23 @@
+@import "~@/style/config/config";
+
+.dropdown {
+  .dropdown-menu {
+    border: none;
+    box-shadow: 0 8px 16px -8px rgba(140, 142, 137, 0.64);
+    min-width: 100%;
+  }
+
+  .btn {
+    position: relative;
+    padding-right: 40px;
+    font-weight: $font-weight-normal;
+  }
+
+  .dropdown-icon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    font-size: 6px;
+    transform: translateY(-50%);
+  }
+}

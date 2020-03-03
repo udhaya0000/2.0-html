@@ -1,0 +1,47 @@
+
+.login {
+  padding-top: 65px;
+
+  .login-details {
+    max-width: 490px;
+    margin: auto;
+    position: relative;
+
+    // .login-details-wrap
+    &-wrap {
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 16px -8px rgba(140, 142, 137, 0.24);
+      max-width: 880px;
+      padding: 100px 0;
+      margin-bottom: 65px;
+    }
+  }
+}
+
+.login-access {
+  color: #8b959c;
+}
+
+.form-img {
+  height: 100px;
+}
+
+@include media-breakpoint-down(md) {
+  .login {
+    padding-top: 0;
+
+    .login-details {
+      padding: 24px 0 0;
+      height: calc(100vh - 48px);
+
+      // .login-details-wrap
+      &-wrap {
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
