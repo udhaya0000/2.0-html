@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Admarket - Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="register-wrap">
+    <div class="d-md-none d-block">
+      ${require('./partials/header.html')}
+    </div>
+    ${require('./partials/side-bar.html')}
+
+    <div class="primary-content">
+      <div class="billing-form-wrap">
+        <h1 class="mb-3 mb-lg-4 page-title"><span class="page-title__text font-weight-light">Contact</span></h1>
+        <h3 class="mb-3 mb-lg-4  section-title"><span class="page-title__text">Personal info</span></h3>
+        <div class="billing-form mb-4">
+          <div class="field mb-3">
+            <div class="field__label"> Name </div>
+            <div class="field__value">Vincent Lam</div>
+          </div>
+          <div class="field mb-3">
+            <div class="field__label"> Phone Number </div>
+            <div class="field__value">+1 017834562</div>
+          </div>
+          <div class="field mb-3">
+            <div class="field__label"> Contact Email </div>
+            <div class="field__value">vlam@obmedia.com</div>
+          </div>
+          <div class="field mb-3">
+            <div class="field__label"> City </div>
+            <div class="field__value">New York City</div>
+          </div>
+          <div class="field mb-3">
+            <div class="field__label"> Notification Email </div>
+            <div class="field__value">vlam@obmedia.com </div>
+          </div>
+          <div class="field mb-3">
+            <div class="field__label"> Instant Messager ID </div>
+            <div class="field__value">Vlam</div>
+          </div>
+        </div>
+
+        <div class="border-bottom mb-4"></div>
+
+        <div class="billing-form mb-4">
+          <h3 class="mb-4 section-title"><span class="page-title__text">Location info</span></h3>
+          <div class="field mb-3">
+            <div class="field__label"> Country </div>
+            <div class="field__value">United States</div>
+          </div>
+          <div class="field mb-3">
+            <div class="field__label"> State/Province </div>
+            <div class="field__value">New York</div>
+          </div>
+          <div class="field mb-3">
+            <div class="field__label"> City </div>
+            <div class="field__value">New York City</div>
+          </div>
+          <div class="field mb-3">
+            <div class="field__label"> Address </div>
+            <div class="field__value">828 Broadway, New York, NY </div>
+          </div>
+          <div class="field mb-3">
+            <div class="field__label"> Postal Code </div>
+            <div class="field__value">10003</div>
+          </div>
+          <div class="field mb-3">
+            <div class="field__label"> Time zone </div>
+            <div class="field__value">EST</div>
+          </div>
+        </div>
+
+        <div class="border-bottom mb-4"></div>
+
+        <div class="billing-form">
+          <div class="row button-single-row g_16">
+            <div class="col-lg-7 single-full">
+              <button type="button" class="btn position-relative btn-edit btn-block">
+                ${require('./icons/edit.svg')}
+                Edit Billing Info</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

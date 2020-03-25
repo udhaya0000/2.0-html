@@ -1,0 +1,313 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Billing Info Request</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
+
+    img {
+      border: none;
+      -ms-interpolation-mode: bicubic;
+      max-width: 100%;
+    }
+
+    body {
+      background-color: #f3f3f3;
+      font-family: 'Montserrat', Verdana, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      font-size: 14px;
+      line-height: 1.4;
+      margin: 0;
+      padding: 0;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* -------------------------------------
+          BODY & CONTAINER
+      ------------------------------------- */
+
+    /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+    .container {
+      border-radius: 16px;
+      display: block;
+      margin: 0 auto;
+      max-width: 540px;
+      padding: 48px 10px 0;
+      width: 540px;
+    }
+
+    /* This should also be a block element, so that it will fill 100% of the .container */
+    .content {
+      box-shadow: 0 8px 16px -8px rgba(140, 142, 137, 0.24);
+      border-radius: 16px;
+      background: #fff;
+      box-sizing: border-box;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    /* -------------------------------------
+          HEADER, FOOTER, MAIN
+      ------------------------------------- */
+
+    .footer {
+      font-size: 0;
+      clear: both;
+      padding: 32px 0;
+      text-align: center;
+      width: 100%;
+    }
+
+    .footer .social-link {
+      display: inline-block;
+      margin: 0 0.75rem;
+      width: 24px;
+    }
+
+    .brand {
+      display: inline-block;
+      width: 92px;
+    }
+
+    .content .hd {
+      border-bottom: 2px solid #f3f3f3;
+      padding: 2rem 0 1.5rem;
+    }
+
+    .content .bd {
+      padding: 40px 110px;
+    }
+
+    .content .title {
+      font-size: 2rem;
+      font-weight: Bold;
+      line-height: 39px;
+      margin-bottom: 40px;
+    }
+
+    .content .email-img {
+      height: 100px;
+      margin-bottom: 12px;
+    }
+
+    .content .main-content {
+      color: #2b3033;
+      max-width: 242px;
+      margin: auto;
+    }
+
+    .content p {
+      text-align: left;
+      margin: 20px 0;
+    }
+
+    .content .section-title {
+      color: #2b3033;
+      display: inline-block;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 24px;
+      position: relative;
+    }
+
+    .section-title .title-text {
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-title-border {
+      position: absolute;
+      height: 10px;
+      width: 100px;
+      background: #b3d9eb;
+      left: 0;
+      bottom: 0;
+      z-index: 0;
+    }
+
+    a {
+      color: #3498db;
+      text-decoration: underline;
+    }
+
+    h1,
+    h2 {
+      margin: 0;
+    }
+
+    /* -------------------------------------
+          BUTTONS
+      ------------------------------------- */
+    .btn {
+      box-sizing: border-box;
+      width: 100%;
+      background-color: #41a1cd;
+      border: solid 1px #41a1cd;
+      border-radius: 8px;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1;
+      margin: 0;
+      padding: 17px 25px;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+
+    /* -------------------------------------
+          OTHER STYLES THAT MIGHT BE USEFUL
+      ------------------------------------- */
+    .last {
+      margin-bottom: 0;
+    }
+
+    .first {
+      margin-top: 0;
+    }
+
+    .align-center {
+      text-align: center;
+    }
+
+    .align-right {
+      text-align: right;
+    }
+
+    .align-left {
+      text-align: left;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    .mt0 {
+      margin-top: 0;
+    }
+
+    .mb0 {
+      margin-bottom: 0;
+    }
+
+    .mr-3 {
+      margin-right: 1.5rem;
+    }
+
+    .mb-2 {
+      margin-bottom: 1rem;
+    }
+
+    .mb-3 {
+      margin-bottom: 1.5rem;
+    }
+
+    .mb-4 {
+      margin-bottom: 2rem;
+    }
+
+    .mb-5 {
+      margin-bottom: 2.5rem;
+    }
+
+    .text-left {
+      text-align: left;
+    }
+
+    .text-primary {
+      color: #41a1cd;
+    }
+
+    .preheader {
+      color: transparent;
+      display: none;
+      height: 0;
+      max-height: 0;
+      max-width: 0;
+      opacity: 0;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+    }
+
+    .powered-by a {
+      text-decoration: none;
+    }
+
+    hr {
+      border: 0;
+      border-bottom: 1px solid #f6f6f6;
+      margin: 20px 0;
+    }
+
+    .icon-text {
+      display: table;
+      align-items: center;
+    }
+
+    .table-cell {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .icon-text .icon {
+      background: #d9ecf5;
+      border-radius: 50%;
+      display: block;
+      width: 40px;
+      margin-right: 8px;
+    }
+
+    .icon img {
+      vertical-align: top;
+    }
+
+    .link-bold {
+      color: #2b3033;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body class="">
+  <span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
+  <div class="container">
+    <div class="content">
+      <div class="hd">
+        <a href="" class="brand"><img src="./images/ob-logo.svg" alt="obmedia.com" /></a>
+      </div>
+      <div class="bd">
+        <h1 class="title">Billing Info request</h1>
+        <div class="main-content">
+          <img class="email-img" src="./images/request.png" alt="user" />
+          <div class="mb-3">
+            <p>the user <strong>Vincent Lam</strong> has updated his billing information..</p>
+            <div class="text-left">
+              <div>Date: 03.13.2019</div>
+              <div>Time: 13:40:13 </div>
+              <div>Location: New York, NY, US.</div>
+            </div>
+          </div>
+          <div class="mb-5">
+            <a href="" class="btn btn-primary">View More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- START FOOTER -->
+    <div class="footer mb-4">
+      <a href="" class="social-link"><img src="./images/Facebook.png" alt="facebook" /></a>
+      <a href="" class="social-link"><img src="./images/Twitter.png" alt="twitter" /></a>
+      <a href="" class="social-link"><img src="./images/Linkedin.png" alt="linkedin" /></a>
+    </div>
+    <!-- END FOOTER -->
+  </div>
+</body>
+
+</html>

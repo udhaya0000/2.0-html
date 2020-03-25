@@ -1,0 +1,207 @@
+.register-wrap {
+  padding-left: 248px;
+}
+
+.g_16 {
+  .col {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+/* ----------  SIDEBAR ENDS ------------ */
+
+/* ----------  TITLE MODIFIED ---------- */
+
+.page-title {
+  font-size: 2.5rem;
+}
+
+.section-title {
+  @extend .page-title;
+
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  &:before {
+    height: 0.5rem;
+    width: 80px;
+  }
+}
+
+/* ----------  TITLE MODIFIED ENDS ---------- */
+
+.primary-content {
+  padding: 80px 32px; // modified
+}
+
+.billing-form-wrap {
+  max-width: 900px;
+
+  .billing-form {
+    max-width: 600px;
+  }
+
+  .edit-icon {
+    margin-right: 8px;
+  }
+}
+
+.selection-method {
+  background-color: #fff;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  padding: 4px 0;
+
+  .btn {
+    border-radius: 25px;
+    font-weight: $font-weight-normal;
+  }
+}
+
+.field {
+  // .field__label
+  &__label {
+    @include label;
+  }
+}
+
+select.form-control {
+  border-color: #c5cacd;
+  box-shadow: 0 8px 16px -8px rgba(140, 142, 137, 0.64);
+}
+
+/* ------------- ICON SIZE MODIFIED --------------- */
+
+.icon-hamburger {
+  font-size: 0.875rem;
+}
+
+.icon-billing-sidebar {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  line-height: 1;
+}
+
+.icon-billing-arrow {
+  font-size: 6px;
+}
+
+.select-wrap {
+  .icon-search {
+    position: absolute;
+    top: 50%;
+    right: auto;
+    left: 16px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 16px;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.5);
+    vertical-align: middle;
+  }
+
+  .icon-close {
+    left: auto;
+    right: 16px;
+  }
+
+  .form-control {
+    background-color: transparent;
+    padding-left: 40px;
+  }
+}
+
+.search-result-list {
+  border-bottom: 1px solid $border-color;
+  padding: 12px 0;
+}
+
+/* ------------- ICON SIZE MODIFIED ENDS --------------- */
+
+.account-details {
+  .field__label,
+  .control__label {
+    display: flex;
+    align-items: center;
+
+    .svg-icon {
+      font-size: 1rem;
+      margin-left: 8px;
+    }
+  }
+
+  textarea.form-control {
+    min-height: 120px;
+    resize: none;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .register-wrap {
+    padding-left: 0;
+  }
+
+  .primary-content {
+    padding: 24px 8px;
+  }
+
+  /* ------------- TITLE MODIFIED --------------- */
+  .page-title {
+    font-size: 1.5rem;
+
+    &:before {
+      width: 75px;
+      height: 8px;
+    }
+  }
+
+  .section-title {
+    font-size: 1rem;
+
+    &:before {
+      width: 52px;
+      height: 4px;
+    }
+  }
+
+  /* ------------- TITLE MODIFIED ENDS--------------- */
+
+  .button-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .button-row .single-full {
+    bottom: 10px;
+  }
+}
+
+.mobile-select-header {
+  background-color: #fff;
+  box-shadow: 0 4px 8px -4px #bdc1cf;
+  line-height: 1;
+  padding: 12px 8px;
+
+  .icon-back {
+    font-size: 24px;
+  }
+}
+
+/* ******** Custom Button*************** */
+
+.btn-edit {
+  border-color: #454d52;
+  background-color: #fff;
+
+  .svg-icon {
+    margin-right: 8px;
+  }
+}

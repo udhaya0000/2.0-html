@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Admarket - Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="register-wrap">
+    <div class="d-md-none d-block">
+      ${require('./partials/header.html')}
+    </div>
+    ${require('./partials/side-bar.html')}
+
+    <div class="primary-content account-details">
+      <div class="billing-form-wrap">
+        <h1 class="mb-3 mb-lg-4 page-title"><span class="page-title__text font-weight-light">Account</span></h1>
+        <h3 class="mb-3 mb-lg-4  section-title"><span class="page-title__text">Basic Info</span></h3>
+        <div class="billing-form">
+          <div class="field mb-3">
+            <div class="field__label"> Username </div>
+            <div class="field__value">vlam@obmedia.com</div>
+          </div>
+          <div class="field mb-3">
+            <div class="field__label"> Password </div>
+            <div class="field__value">****************</div>
+          </div>
+        </div>
+
+        <div class="border-bottom mb-4"></div>
+
+        <div class="billing-form mb-4">
+          <div class="field mb-3">
+            <div class="field__label"> Company Name </div>
+            <div class="field__value">OBmedia</div>
+          </div>
+          <div class="field mb-3">
+            <div class="field__label"> Redirect Domain ${require('./icons/help.svg')}</div>
+            <div class="field__value">OBmedia.com</div>
+          </div>
+          <div class="field mb-3">
+            <div class="field__label"> API Key #1 ${require('./icons/help.svg')}</div>
+            <div class="field__value">d91cf12c-958a-42fb-a1d6-7f8c2b43726b</div>
+          </div>
+          <div class="field mb-3">
+            <div class="field__label"> API Key #2 ${require('./icons/help.svg')}</div>
+            <div class="field__value">ab564a60-952d-4e0d-e494-aaba0b79c2ba</div>
+          </div>
+          <div class="field mb-3">
+            <div class="field__label"> Publisher Traffic Types Enabled ${require('./icons/help.svg')}</div>
+            <div class="field__value">
+              <ul class="">
+                <li>CPC - Google Ads</li>
+                <li>CPC - Bing Ads</li>
+              </ul>
+            </div>
+          </div>
+          <div class="field mb-3">
+            <div class="field__label"> Google DRID ${require('./icons/help.svg')}</div>
+            <div class="field__value">3PH</div>
+          </div>
+          <div class="field mb-3">
+            <div class="field__label"> Google Client ${require('./icons/help.svg')}</div>
+            <div class="field__value">partner-dp-domainactive7_xml</div>
+          </div>
+        </div>
+
+        <div class="border-bottom mb-4"></div>
+
+        <div id="parking-info" class="billing-form">
+          <h3 class="mb-4 section-title"><span class="page-title__text">Parking Info</span></h3>
+          <div class="form-group">
+            <div class="control__label"> Parking Contact/Sale URL ${require('./icons/help.svg')}</div>
+            <input autocomplete="off" name="" placeholder="" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <div class="control__label"> Parking Contact Info. ${require('./icons/help.svg')}</div>
+            <textarea autocomplete="off" name="" placeholder="" type="text" class="form-control"></textarea>
+          </div>
+          <div class="form-group">
+            <div class="control__label"> Text for Parking Contact Info Link ${require('./icons/help.svg')}</div>
+            <input autocomplete="off" name="" placeholder="" type="text" class="form-control">
+          </div>
+          <div class="row button-single-row g_16">
+            <div class="col-lg-7 col-12 single-full">
+              <button type="submit" class="btn btn-primary btn-block">Update Parking Info</button>
+            </div>
+            <div class="col-lg-5 col-12 single-full">
+              <a href="./account.html" class="btn btn-block text-md-left">Cancel</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

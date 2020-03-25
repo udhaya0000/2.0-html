@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-icon svg-fill">
+    <!-- Generator: sketchtool 55.2 (78181) - https://sketchapp.com -->
+    <title>45ACEC36-2C48-4476-BE8D-194082F8B26B</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Asset-Artboard-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/menu/dashboard/stats/off" fill="#454D52">
+            <path d="M5,4 L5,1 C5,0.447 5.447,0 6,0 L23,0 C23.553,0 24,0.447 24,1 L24,20 C24,22.209 22.209,24 20,24 L3,24 C1.343,24 0,22.721 0,21.143 L0,5 C0,4.447 0.447,4 1,4 L5,4 Z M5,5 L1,5 L1,21.143 C1,22.167 1.897,23 3,23 C3.215,23 3.437,22.96 3.68,22.878 C4.46984827,22.6100515 4.9997964,21.9132677 4.99999994,21.1434437 L5,5 Z M5.99999963,21.1446484 C5.99970365,21.8080526 5.82073436,22.4434609 5.5,23 L20,23 C21.654,23 23,21.654 23,20 L23,1 L6,1 L6,4 L6,21.143 C6,21.1435495 5.99999984,21.144099 5.99999951,21.1446484 Z M8,6 L8,5 L21,5 L21,6 L8,6 Z M8,8 L8,7 L21,7 L21,8 L8,8 Z M8,10 L8,9 L21,9 L21,10 L8,10 Z M9,18 C8.44771525,18 8,17.5522847 8,17 L8,12 C8,11.4477153 8.44771525,11 9,11 L20,11 C20.5522847,11 21,11.4477153 21,12 L21,17 C21,17.5522847 20.5522847,18 20,18 L9,18 Z M9,17 L20,17 L20,12 L9,12 L9,17 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

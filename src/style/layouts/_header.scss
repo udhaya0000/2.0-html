@@ -3,7 +3,7 @@
 }
 
 .navbar-brand {
-  font-size: 32px;
+  font-size: 28px;
   line-height: 1;
 }
 
@@ -17,4 +17,9 @@
   top: 48px;
   bottom: 0;
   z-index: 99;
+}
+
+.hamburger-btn {
+  position: absolute;
+  padding: 11px 10px;
 }

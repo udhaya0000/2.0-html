@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Admarket - Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="register-wrap">
+    <div class="d-md-none d-block">
+      ${require('./partials/header.html')}
+    </div>
+    ${require('./partials/side-bar.html')}
+
+    <div class="primary-content">
+      <div class="billing-form-wrap">
+        <h1 class="mb-3 mb-lg-4 page-title"><span class="page-title__text font-weight-light">Billing</span></h1>
+        <h3 class="mb-3 mb-lg-4  section-title"><span class="page-title__text">Payee Information</span></h3>
+
+          <div class="billing-form mb-4">
+            <div class="field mb-3">
+              <div class="field__label"> Name </div>
+              <div class="field__value">OBmedia INC.</div>
+            </div>
+            <div class="field mb-3">
+              <div class="field__label"> Country </div>
+              <div class="field__value">United States</div>
+            </div>
+            <div class="field mb-3">
+              <div class="field__label"> State/Province </div>
+              <div class="field__value">New York</div>
+            </div>
+            <div class="field mb-3">
+              <div class="field__label"> City </div>
+              <div class="field__value">New York City</div>
+            </div>
+            <div class="field mb-3">
+              <div class="field__label"> Address 1 </div>
+              <div class="field__value">828 Broadway, New York, NY </div>
+            </div>
+            <div class="field mb-3">
+              <div class="field__label"> Postal Code </div>
+              <div class="field__value">10003</div>
+            </div>
+            <div class="field mb-3">
+              <div class="field__label"> SS#/Corporate ID#/ABN/EIN </div>
+              <div class="field__value">12385648</div>
+            </div>
+          </div>
+
+          <div class="border-bottom mb-4"></div>
+
+          <div class="billing-form mb-4">
+            <h3 class="mb-4 section-title"><span class="page-title__text">Payment Method</span></h3>
+            <div class="field mb-3">
+              <div class="field__label"> Selected Method </div>
+              <div class="field__value">Wire</div>
+            </div>
+            <div class="field mb-3">
+              <div class="field__label"> Account Holder Name </div>
+              <div class="field__value">Sebastian Niebles</div>
+            </div>
+            <div class="field mb-3">
+              <div class="field__label"> Bank Name </div>
+              <div class="field__value">N26 Banking</div>
+            </div>
+            <div class="field mb-3">
+              <div class="field__label"> Bank Routing Number </div>
+              <div class="field__value">12239494</div>
+            </div>
+            <div class="field mb-3">
+              <div class="field__label"> Bank Account Number </div>
+              <div class="field__value">DE12395858</div>
+            </div>
+            <div class="field mb-3">
+              <div class="field__label"> Bank Swift Code </div>
+              <div class="field__value">NTSBDEB1 XXX</div>
+            </div>
+          </div>
+
+          <div class="border-bottom mb-4"></div>
+
+          <div class="billing-form">
+            <div class="row button-single-row g_16">
+              <div class="col-lg-7 single-full">
+                <a href="./billing.html" class="btn position-relative btn-edit btn-block">
+                  ${require('./icons/edit.svg')}
+                  Edit Billing Info</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -30,8 +30,8 @@ const openNav = (nav) => {
   hamburgerToArrow();
 
   anime({
-    targets: '#mainNav',
-    translateX: 200,
+    targets: '#side-nav',
+    translateX: 248,
     duration: 250,
     opacity: 1,
     easing: 'cubicBezier(.5, .05, .1, .3)'
@@ -53,7 +53,7 @@ function closeNav(nav) {
   });
   arrowToHumburger();
   anime({
-    targets: '#mainNav',
+    targets: '#side-nav',
     translateX: 0,
     opacity: 0,
     duration: 350,
